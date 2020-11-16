@@ -1,0 +1,30 @@
+﻿@model int
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>warning</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <div class="jumbotron">
+            <div class="container text-center">
+                <h1 class="display-4">Are you sure you want to delete!</h1>
+                <br />
+                <br />
+                <br />
+                <form action="/student/delete/@Model" method="post">
+                    <button type="submit" class="btn btn-secondary mr-2 btn-lg">Yes</button>
+                    <a class="btn btn-primary mr-2 btn-lg" href="/student/index" type="button">No</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

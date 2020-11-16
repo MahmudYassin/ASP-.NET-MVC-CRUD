@@ -1,0 +1,29 @@
+﻿@model department
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>details</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <table class="table table-bordered ">
+            <tbody class="thead-light">
+                <tr>
+                    <td>@Model.id</td>
+                    <td>@Model.name</td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+
+        <a class="btn btn-primary" href="/department/Index" role="button">Back</a>
+    </div>
+</body>
+</html>

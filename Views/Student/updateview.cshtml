@@ -1,0 +1,28 @@
+﻿@model student
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>update</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <form action="/student/update/" method="post">
+            <label>ID</label>
+            <input class="form-control" type="text" name="id" value="@Model.id" readonly>
+            <label>Name</label>
+            <input class="form-control" type="text" name="name" placeholder="@Model.name">
+            <label>Age</label>
+            <input class="form-control" type="text" name="age" placeholder="@Model.age">
+            <br />
+            <button type="submit" class="btn btn-primary mb-2">update</button>
+        </form>
+    </div>
+</body>
+</html>
